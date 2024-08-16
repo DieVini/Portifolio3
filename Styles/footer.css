@@ -1,0 +1,8 @@
+.rodape{
+    padding: 2rem;
+    box-shadow: 0px 2px 0px 0px rgba(20, 1, 32, 0.705) inset;
+}
+.rodape_titulo{
+    font-size: 1rem;
+    font-family: var(--font-1);
+}

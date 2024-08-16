@@ -1,0 +1,42 @@
+.cadastro{ /*tag section*/
+    background: var(--cor-branco);
+    padding: 1em;
+}
+.cadastro_titulo{ /*tag h2*/
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: var(--font-1);
+    color: var(--cor-azul);
+}
+.cadastro_texto{ /*tag p*/
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: var(--font-1);
+    margin: 1em 0;
+    color: var(--cor-azul);
+}
+.cadastro_pesquisa{ /*tag input*/
+    background-color: transparent;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1.5em;
+    border: 1px solid black;
+    color: var(--cor-azul);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font-1);
+}
+.cadastro_pesquisa::placeholder{ /*mudar a cor do texto dentro da caixa de pesquisa*/
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-azul);
+    text-align: center;
+    font-family: var(--font-1);
+    background-image: url(../assets/Vector.svg); /*lupa de pesquisa*/
+    background-repeat: no-repeat;  /*para evitar multiplas lupas*/  
+    background-position: 1em;
+}
