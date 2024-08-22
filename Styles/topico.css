@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     padding: 1em;
     gap: 1em;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .topicos_grupo_botoes{ /*configuracao dos botoes*/
@@ -31,4 +31,29 @@
     font-family: var(--font-1);
     padding: 1em 1.5em;
     background-color: var(--cor-laranja);
+}
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .topicos_grupo{
+        align-items: center;
+        justify-content: center;
+    }
+    .topicos_grupo_botoes{
+        font-size: 1.5rem;
+    }
+    .topicos_titulo{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width: 1728px){
+    .topicos_grupo{
+        align-items: center;
+        justify-content: center;
+    }
+    .topicos_grupo_botoes{
+        font-size: 1.5rem;
+    }
+    .topicos_titulo{
+        font-size: 2rem;
+    }
 }

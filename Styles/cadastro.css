@@ -40,3 +40,33 @@
     background-repeat: no-repeat;  /*para evitar multiplas lupas*/  
     background-position: 1em;
 }
+
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .cadastro_titulo{
+        font-size: 1.5rem;
+    }
+    .cadastro_pesquisa{
+        width: 35%;
+        margin: 0 0 0 1.5em;
+    }
+    .cadastro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(min-width: 1728px){
+    .cadastro_titulo{
+        font-size: 1.5rem;
+    }
+    .cadastro_pesquisa{
+        width: 25%;
+        margin: 0 0 0 1.5em;
+    }
+    .cadastro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

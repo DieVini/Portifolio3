@@ -2,6 +2,10 @@
     background: var(--azul-degrade);
     color: var(--cor-branco);
     padding: 2.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .banner_titulo{ /*tag h2*/
     font-size: 1.125rem;
@@ -22,7 +26,7 @@
     background-color: transparent;
     width: 100%;
     padding: 1em;
-    border-radius: 24px;
+    border-radius: 1.5em;
     border: 1px solid var(--cor-branco);
     color: var(--cor-branco);
     font-size: 0.875rem;
@@ -41,4 +45,17 @@
     background-image: url(../assets/Pesquisa.svg); /*lupa de pesquisa*/
     background-repeat: no-repeat;  /*para evitar multiplas lupas*/  
     background-position: 1em;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .banner_pesquisa{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1728px){
+    .banner_pesquisa{
+        width: 50%;
+    }
 }

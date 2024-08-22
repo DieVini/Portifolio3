@@ -49,18 +49,18 @@
 
 .card_1_subtitulo{ /*tag h3*/
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1rem; /*16px*/
     color: var(--cor-laranja);
 }
 
 .card_1_titulo{ /*tag h2*/
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.125rem; /*18px*/
 }
 
 .card_1_paragrafo{ /*tag p*/
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 0.875rem; /*14px*/
 }
 
 .card_2_botao{
@@ -72,4 +72,62 @@
     font-family: var(--font-1);
     padding: 1rem 2.25rem;
     background-color: var(--cor-laranja);
+}
+
+.card_estrela{
+    width: 50%;
+}
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .swiper-slide img{
+        width: 100%;
+    }
+    .card{
+        width: 50%;
+    }
+    .card_img{
+        width: auto;
+    }
+    .carrossel_titulo{
+        font-size: 1.625rem;
+    }
+    .card_1_titulo{ 
+        font-size: 1.125rem;
+    }
+    .card_1_subtitulo{ 
+        font-size: 1rem;
+    }
+    .card_1_paragrafo{ 
+        font-size: 1rem; 
+    }
+}
+
+@media(min-width: 1728px){
+    .swiper-slide img{
+        width: 100%;
+    }
+    .carrossel_pc{
+        display: flex;
+    }
+    .card_2_botao{
+        width: 37%;
+    }
+    .card{
+        width: 50%;
+    }
+    .card_img{
+        width: 50%;
+    }
+    .carrossel_titulo{
+        font-size: 2rem;
+    }
+    .card_1_titulo{ 
+        font-size: 1.125rem;
+    }
+    .card_1_subtitulo{ /*tag h3*/
+        font-size: 2rem;
+    }
+    .card_1_paragrafo{ /*tag p*/
+        font-size: 1rem; /*14px*/
+    }
 }
