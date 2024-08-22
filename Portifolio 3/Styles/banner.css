@@ -1,0 +1,61 @@
+.banner{ /*tag section*/
+    background: var(--azul-degrade);
+    color: var(--cor-branco);
+    padding: 2.5em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner_titulo{ /*tag h2*/
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-family: var(--font-1)
+}
+.banner_texto{ /*tag p*/
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-family: var(--font-1);
+    margin: 1em 0;
+}
+.banner_pesquisa{ /*tag input*/
+    background-color: transparent;
+    width: 100%;
+    padding: 1em;
+    border-radius: 1.5em;
+    border: 1px solid var(--cor-branco);
+    color: var(--cor-branco);
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-family: var(--font-1);
+}
+.banner_pesquisa::placeholder{ /*mudar a cor do texto dentro da caixa de pesquisa*/
+    color: var(--cor-branco);
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-family: var(--font-1);
+    background-image: url(../assets/Pesquisa.svg); /*lupa de pesquisa*/
+    background-repeat: no-repeat;  /*para evitar multiplas lupas*/  
+    background-position: 1em;
+}
+
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .banner_pesquisa{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1728px){
+    .banner_pesquisa{
+        width: 50%;
+    }
+}

@@ -1,0 +1,133 @@
+.carrossel_titulo{ /*tag H2*/
+    font-family: var(--font-1);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--cor-laranja);
+    font-style: none;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--cor-branco);
+    text-transform: uppercase;
+}
+
+.swiper-slide img{ /*tag div dentro da div swiper_wrapper, contendo todo o carrossel*/
+    width: 200%;
+}
+
+.swiper-pagination{
+    position: initial;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    border-radius: 0.625em;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0px 4px 8px rgba(35, 3, 56, 0.705);
+    gap: 1.25em;
+}
+
+.card_1{ /*tag div da linha 1*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_2{ /*tag div dos botoes da linha 2*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_1_info{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-1);
+    gap: 1em;
+    width: 50%;
+}
+
+.card_1_subtitulo{ /*tag h3*/
+    font-weight: 700;
+    font-size: 1rem; /*16px*/
+    color: var(--cor-laranja);
+}
+
+.card_1_titulo{ /*tag h2*/
+    font-weight: 700;
+    font-size: 1.125rem; /*18px*/
+}
+
+.card_1_paragrafo{ /*tag p*/
+    font-weight: 400;
+    font-size: 0.875rem; /*14px*/
+}
+
+.card_2_botao{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: var(--font-1);
+    padding: 1rem 2.25rem;
+    background-color: var(--cor-laranja);
+}
+
+.card_estrela{
+    width: 50%;
+}
+
+@media(min-width: 1024px) and (max-width: 1727px){
+    .swiper-slide img{
+        width: 100%;
+    }
+    .card{
+        width: 50%;
+    }
+    .card_img{
+        width: auto;
+    }
+    .carrossel_titulo{
+        font-size: 1.625rem;
+    }
+    .card_1_titulo{ 
+        font-size: 1.125rem;
+    }
+    .card_1_subtitulo{ 
+        font-size: 1rem;
+    }
+    .card_1_paragrafo{ 
+        font-size: 1rem; 
+    }
+}
+
+@media(min-width: 1728px){
+    .swiper-slide img{
+        width: 100%;
+    }
+    .carrossel_pc{
+        display: flex;
+    }
+    .card_2_botao{
+        width: 37%;
+    }
+    .card{
+        width: 50%;
+    }
+    .card_img{
+        width: 50%;
+    }
+    .carrossel_titulo{
+        font-size: 2rem;
+    }
+    .card_1_titulo{ 
+        font-size: 1.125rem;
+    }
+    .card_1_subtitulo{ /*tag h3*/
+        font-size: 2rem;
+    }
+    .card_1_paragrafo{ /*tag p*/
+        font-size: 1rem; /*14px*/
+    }
+}
